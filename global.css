@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./Assets/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(234, 245, 241);
+    position: relative;
+}
+
+.container {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 450px;
+   background-color: rgb(227, 252, 242);
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.text-container {
+    padding: 10% 15%;
+    text-align: center;
+}
+.order-summary h1 {
+    color: rgb(5, 5, 49);
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    margin-bottom: 20px;
+}
+
+.plan-box {
+    background-color: rgb(225, 241, 243);
+    display: flex;
+    padding: 12px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.plan-box-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan-box-left div {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.plan-box-left h4 {
+    
+    color: rgb(5, 5, 49);
+}
+
+.plan-box a {
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(5, 5, 49);
+}
+.plan-box a:hover {
+    text-decoration: none;
+    color: rgb(45, 45, 90);
+}
+
+a.proceed-btn {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: rgb(13, 13, 233);
+    padding: 12px 0;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+a.proceed-btn:hover {
+    text-decoration: none;
+    background-color: rgb(45, 45, 90);
+}
+
+
+a.cancel-btn {
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(41, 41, 121);
+    transition: color .5s ease;
+}
+a.cancel-btn:hover {
+    color: rgb(11, 11, 46);
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url(./Assets/pattern-background-mobile.svg);
+        font-size: 13px;
+    }
+    .container{
+        max-width: 87%;
+    }
+    .order-summary h1 {
+        font-size: 20px;
+    }
+
+}
